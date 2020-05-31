@@ -7,9 +7,6 @@ RUN apk upgrade --update-cache --available && \
 RUN adduser -S vlcuser
 COPY entrypoint.sh /
 
-EXPOSE 8081
-EXPOSE 8082
-
 USER vlcuser
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["cvlc"]
