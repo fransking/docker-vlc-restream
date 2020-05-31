@@ -1,4 +1,4 @@
-# docker-vlc-restream
+# VLC Restream
 Small container for restreaming video from IOT cameras on a central docker host
 
 ## Quick Start
