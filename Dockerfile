@@ -1,4 +1,6 @@
-FROM arm32v7/alpine
+ARG docker_arch
+
+FROM ${docker_arch}/alpine
 
 RUN apk upgrade --update-cache --available && \
         apk add vlc && \
